@@ -5,7 +5,7 @@
     "lint": "yarn lerna run lint",
     "build": "yarn lerna run build",
     "prep": "yarn && yarn lerna bootstrap",
-    "reinstall": "rm -rf node_modules && rm -rf packages/*/node_modules && yarn prep"
+    "reinstall": "powershell -Command \"Remove-Item -Recurse -Force node_modules; Get-ChildItem -Path packages -Recurse -Directory -Filter node_modules | Remove-Item -Recurse -Force\" && yarn prep"
   },
   "dependencies": {
     "lerna": "^3.10.7"
