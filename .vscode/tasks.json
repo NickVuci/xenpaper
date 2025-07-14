@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Start Xenpaper App",
+			"command": "yarn install && yarn lerna bootstrap && yarn lerna run build && yarn lerna run start",
+			"group": "build",
+			"problemMatcher": [
+				"$tsc"
+			]
+		}
+	]
+}

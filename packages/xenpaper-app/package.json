@@ -19,8 +19,8 @@
     "@xenpaper/xenpaper-ui": "0.0.0"
   },
   "scripts": {
-    "start": "PUBLIC_URL=\"/xenpaper\" DISABLE_ESLINT_PLUGIN=true NODE_OPTIONS=--openssl-legacy-provider craco start",
-    "build": "PUBLIC_URL=\"/xenpaper\" DISABLE_ESLINT_PLUGIN=true NODE_OPTIONS=--openssl-legacy-provider craco build",
+    "start": "cross-env PUBLIC_URL=/xenpaper DISABLE_ESLINT_PLUGIN=true NODE_OPTIONS=--openssl-legacy-provider craco start",
+    "build": "cross-env PUBLIC_URL=/xenpaper DISABLE_ESLINT_PLUGIN=true NODE_OPTIONS=--openssl-legacy-provider craco build",
     "eject": "PUBLIC_URL=\"/xenpaper\" DISABLE_ESLINT_PLUGIN=true NODE_OPTIONS=--openssl-legacy-provider craco eject"
   },
   "browserslist": {
